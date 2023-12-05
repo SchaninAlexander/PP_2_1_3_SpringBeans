@@ -12,11 +12,10 @@ public class AnimalsCage {
     @Qualifier("dog")
     private Animal animal;
 
-    private final Timer timer;
+    @Autowired
+    private  Timer timer;
 
-    public AnimalsCage(Timer timer) {
-        this.timer = timer;
-    }
+
 
 
     public void whatAnimalSay() {
